@@ -1,0 +1,38 @@
+{
+  "name": "messenger_api_itransition",
+  "version": "1.0.0",
+  "description": "learn messenger project",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint . --fix",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariiaGudkova/Messenger_api_Itransition.git"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "Mariia Gudkova <gudmary8@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariiaGudkova/Messenger_api_Itransition/issues"
+  },
+  "homepage": "https://github.com/MariiaGudkova/Messenger_api_Itransition#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.3",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0"
+  }
+}
