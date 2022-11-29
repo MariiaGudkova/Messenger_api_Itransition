@@ -64,6 +64,16 @@ const getUserInfo = (req, res) => {
     });
 };
 
+const getUsers = (req, res) => {
+  User.find({})
+    .then((users) => res.send({ data: users }))
+    .catch(() => {
+      return res
+          .status(SERVER_ERROR_CODE)
+          .send({ message: "An error occurred on the server" });
+    });
+};
+
 const sendMessage = (req, res) => {
   const { user, name, theme, text, time } = req.body;
   User.findOneAndUpdate({ name }, {$addToSet: {messages: [{ sender: user, theme: theme, text: text, time: time }]}}, { new: true }).orFail().then((recipient) => {
@@ -80,4 +90,4 @@ const sendMessage = (req, res) => {
 })
 }
 
-module.exports = { login, sendMessage, getUserInfo };
+module.exports = { login, sendMessage, getUserInfo, getUsers };
