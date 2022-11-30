@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const helmet = require("helmet");
 require("dotenv").config();
 
-const { PORT = 5000, MONGO_URL = "mongodb://localhost:27017/messengersbd" } =
+const { PORT = 5000, MONGO_URL = "mongodb://mongo:GhoVp1cRV5FNpMt8SPl5@containers-us-west-97.railway.app:7049" } =
   // eslint-disable-next-line no-undef
   process.env;
 const app = express();
