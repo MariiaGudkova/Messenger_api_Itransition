@@ -20,3 +20,6 @@ Web-приложение позволяет пользователям отпр�
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original-wordmark.svg" width="60" height="60">&nbsp;
 
 ## Видео <img src="https://media.giphy.com/media/xjzdmTKnRQL0adoFp2/giphy.gif" width="100" height="100">
+
+https://user-images.githubusercontent.com/101827457/204894379-4b4ad315-96d5-464c-9670-86af3f8553cb.mp4
+
