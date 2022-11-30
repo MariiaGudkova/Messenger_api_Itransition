@@ -8,7 +8,7 @@ const SERVER_ERROR_CODE = 500;
 const allowedCors = [
   "http://localhost:3000",
   "https://localhost:3000",
-  "https://mariiagudkova.github.io/Web_application_Itransition/",
+  "https://mariiagudkova.github.io/Messenger_front_Itransition/",
 ];
 
 const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";
