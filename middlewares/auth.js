@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
-// const { NODE_ENV, JWT_SECRET } = process.env;
+// eslint-disable-next-line no-undef
+const { NODE_ENV, JWT_SECRET } = process.env;
 const { UNAUTHORIZATION_ERROR_CODE } = require("../utils/constants");
 
 module.exports = (req, res, next) => {
@@ -11,7 +12,7 @@ module.exports = (req, res, next) => {
     const token = authorization.replace("Bearer ", "");
     const payload = jwt.verify(
       token,
-      // NODE_ENV === "production" ? JWT_SECRET :
+      NODE_ENV === "production" ? JWT_SECRET :
        "dev-secret"
     );
     req.user = payload;
