@@ -5,11 +5,7 @@ const NOTFOUND_ERROR_CODE = 404;
 const CONFLICT_ERROR_CODE = 409;
 const SERVER_ERROR_CODE = 500;
 
-const allowedCors = [
-  "http://localhost:3000",
-  "https://localhost:3000",
-  "https://mariiagudkova.github.io/Messenger_front_Itransition/",
-];
+const allowedCors = ["https://mariiagudkova.github.io"];
 
 const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";
 
