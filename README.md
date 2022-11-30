@@ -11,7 +11,7 @@ Web-приложение позволяет пользователям отпр�
 Вход в приложение только через ввод имени (без пароля, без регистрации и т.п.). Такой "анонимный чат-через-письма".
 Приложение похоже на приложение электронной почты, а не на чат.
 
-## Стек <img src="https://media.giphy.com/media/wt0cqyJDZDetIDd3ZM/giphy.gif" width="100" height="100">
+## Стек <img src="https://media.giphy.com/media/wt0cqyJDZDetIDd3ZM/giphy.gif" width="120" height="120">
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original-wordmark.svg" width="60" height="60">&nbsp;
 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/express/express-original-wordmark.svg" width="60" height="60">&nbsp;
