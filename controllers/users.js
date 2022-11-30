@@ -2,14 +2,15 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const User = require('../models/user');
 const { BAD_REQUEST_ERROR_CODE, NOTFOUND_ERROR_CODE, SERVER_ERROR_CODE } = require('../utils/constants');
-// const {NODE_ENV, JWT_SECRET} = process.env;
+// eslint-disable-next-line no-undef
+const {NODE_ENV, JWT_SECRET} = process.env;
 
 const login = (req, res) => {
   const { name } = req.body;
   User.findOne({ name }).orFail().then((user) => {
     const token = jwt.sign(
       { _id: user._id },
-      // NODE_ENV === "production" ? JWT_SECRET : 
+      NODE_ENV === "production" ? JWT_SECRET : 
       "dev-secret",
       { expiresIn: "24h" }
     );
@@ -25,7 +26,7 @@ const login = (req, res) => {
       User.create({ name }).then((user) => {
         const token = jwt.sign(
           { _id: user._id },
-          // NODE_ENV === "production" ? JWT_SECRET : 
+          NODE_ENV === "production" ? JWT_SECRET : 
           "dev-secret",
           { expiresIn: "24h" }
         );
